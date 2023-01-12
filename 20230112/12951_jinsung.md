@@ -14,9 +14,9 @@ def solution(s):
 
     for i in range(len(s)):
         if s[i] == ' ':
-                  answer += " "
-                  flag = True
-                  continue
+            answer += " "
+            flag = True
+            continue
         try:
             answer = answer + str(int(s[i]))
             flag = False
