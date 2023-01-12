@@ -13,19 +13,14 @@ def solution(s):
     flag = True
 
     for i in range(len(s)):
+        if s[i] == ' ':
+                  answer += " "
+                  flag = True
+                  continue
         try:
-            if s[i] == ' ':
-                answer += " "
-                flag = True
-                continue
             answer = answer + str(int(s[i]))
             flag = False
         except:
-            if s[i] == ' ':
-                answer += " "
-                flag = True
-                continue
-
             is_upper = s[i] in char_uc_lst
             if flag == is_upper:
                 answer += s[i]
