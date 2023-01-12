@@ -35,7 +35,7 @@ function solution(today, terms, privacies) {
     let answer = [];
 
     let terms_dict = {};
-    for (let t of terms) { //save terms as dictionary
+    for (let t of terms) { //save terms as object
         let [a,b] = t.split(" ");
         terms_dict[a] = parseInt(b);
     }
